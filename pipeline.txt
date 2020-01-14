@@ -3,20 +3,23 @@
     
     stages {
         stage('编译') {
+		    agent {label 'master'}
             steps {
-			    cd test
-                mvn clean compile
+			    bat 'cd test'
+                bat 'mvn clean compile'
             }
         }
 		stage('打包') {
+		    agent {label 'master'}
             steps {
-                mvn clean package
+                bat 'mvn clean package'
             }
         }
 		stage('运行') {
+		    agent {label 'master'}
             steps {
-                cd target
-				java -jar test-0.0.1-SNAPSHOT.jar
+                bat 'cd target'
+				bat 'java -jar test-0.0.1-SNAPSHOT.jar'
             }
         }
     }
