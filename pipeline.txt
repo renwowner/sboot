@@ -1,0 +1,25 @@
+﻿pipeline{
+  agent any
+    
+    stages {
+        stage('编译') {
+            steps {
+			    cd test
+                mvn clean compile
+            }
+        }
+		stage('打包') {
+            steps {
+                mvn clean package
+            }
+        }
+		stage('运行') {
+            steps {
+                cd target
+				java -jar test-0.0.1-SNAPSHOT.jar
+            }
+        }
+    }
+
+
+}
