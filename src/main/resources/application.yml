@@ -1,0 +1,8 @@
+datasource:
+   id: "localhost"
+   name: "root"
+   password: "1234"
+   write:
+      id: "localhost-write"
+      name: "write"
+      password: "4567"
