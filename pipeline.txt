@@ -7,7 +7,6 @@
 			    script{
 					bat "mvn -v"
 				} 
-			    
             }
         }
 		stage('打包') { 
@@ -16,8 +15,7 @@
 				bat "dir"
             }
         }
-		stage('运行') {
-		    
+		stage('运行') {	    
             steps {
 				script{
 					bat "java -version"
@@ -25,6 +23,4 @@
             }
         }
     }
-
-
 }
