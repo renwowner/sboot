@@ -2,24 +2,26 @@ pipeline{
   agent any
     
     stages {
-        stage('bianyi') {	    
+        stage('编译') {	    
             steps {
 			    script{
-					bat "mvn -v"
+				    bat "cd test"
+					bat "mvn clean compile"
 				} 
             }
         }
 		stage('打包') { 
             steps {
                 script{
-				bat "dir"
+				bat "mvn clean package"
 				}
             }
         }
 		stage('运行') {	    
             steps {
 				script{
-					bat "java -version"
+				    bat "cd target"
+					bat "java -jar test-0.0.1-SNAPSHOT.jar"
 				}         
             }
         }
