@@ -1,0 +1,52 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ykf.controller.TestController",
+      "name": "datasource",
+      "type": "com.ykf.controller.TestController"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController1",
+      "name": "kk",
+      "type": "com.ykf.controller.TestController1"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ykf.controller.TestController",
+      "name": "datasource.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController",
+      "name": "datasource.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController",
+      "name": "datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController",
+      "name": "datasource.write",
+      "type": "com.ykf.controller.write"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController1",
+      "name": "kk.ip",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController1",
+      "name": "kk.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ykf.controller.TestController1",
+      "name": "kk.password",
+      "type": "java.lang.String"
+    }
+  ]
+}
