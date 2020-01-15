@@ -5,21 +5,19 @@
         stage('编译') {
 		    
             steps {
-			    bat 'cd test'
-                bat 'mvn clean compile'
+			    
             }
         }
 		stage('打包') {
 		    
             steps {
-                bat 'mvn clean package'
+                
             }
         }
 		stage('运行') {
 		    
             steps {
-                bat 'cd target'
-				bat 'java -jar test-0.0.1-SNAPSHOT.jar'
+                
             }
         }
     }
