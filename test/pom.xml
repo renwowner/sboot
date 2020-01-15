@@ -33,7 +33,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-
+      <scope>test</scope>
     </dependency>
     <!--  
     <dependency>
@@ -85,8 +85,9 @@
     </dependency>
     
   </dependencies>
-  <!-- 
+ 
   <build>
+   <!-- 
      <resources>
         <resource>
             <directory>src/main/resources/lib</directory>
@@ -96,9 +97,9 @@
             </includes>
         </resource>
      </resources>
-     
+     -->
      <plugins>
-      
+       <!-- 
          <plugin>
              <groupId>org.mybatis.generator</groupId>
              <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -116,11 +117,12 @@
                  </dependency>
              </dependencies>
          </plugin>
+         -->
          <plugin>
              <groupId>org.springframework.boot</groupId>
              <artifactId>spring-boot-maven-plugin</artifactId>
              <version>1.5.7.RELEASE</version>
          </plugin>
      </plugins>
-  </build>-->
+  </build>
 </project>
