@@ -13,6 +13,7 @@
             steps {
                 script{
 				bat "dir"
+				}
             }
         }
 		stage('运行') {	    
