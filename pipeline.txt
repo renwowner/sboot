@@ -2,21 +2,21 @@ pipeline{
   agent any
     
     stages {
-        stage('缂栬瘧') {	    
+        stage('编译') {	    
             steps {
 			    script{
 					bat "mvn -v"
 				} 
             }
         }
-		stage('鎵撳寘') { 
+		stage('打包') { 
             steps {
                 script{
 				bat "dir"
 				}
             }
         }
-		stage('杩愯') {	    
+		stage('运行') {	    
             steps {
 				script{
 					bat "java -version"
