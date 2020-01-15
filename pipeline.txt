@@ -5,23 +5,22 @@ pipeline{
         stage('编译') {	    
             steps {
 			    script{
-				    bat "cd test"
-					bat "mvn clean compile"
+					bat "cd test&&mvn clean compile"
 				} 
             }
         }
 		stage('打包') { 
             steps {
                 script{
-				bat "mvn clean package"
+				bat "cd test&&mvn clean package"
 				}
             }
         }
 		stage('运行') {	    
             steps {
 				script{
-				    bat "cd target"
-					bat "java -jar test-0.0.1-SNAPSHOT.jar"
+
+					bat "cd test/target&&java -jar test-0.0.1-SNAPSHOT.jar"
 				}         
             }
         }
