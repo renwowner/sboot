@@ -2,7 +2,7 @@ pipeline{
   agent any
     
     stages {
-        stage('±àÒë') {	    
+        stage('bianyi') {	    
             steps {
 			    script{
 					bat "mvn -v"
