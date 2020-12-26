@@ -34,7 +34,7 @@ public class AppTest
     public void testApp()
     {
 
-
+        System.out.println("ahjahhahah");
 
         assertTrue( true );
     }
