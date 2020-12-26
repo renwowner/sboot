@@ -14,7 +14,7 @@ public class ApplicationStart {
 //		String id = context.getEnvironment().getProperty("kk.ip");
 		ConfigurableEnvironment pros = context.getEnvironment();
 		System.out.println("adfad");
-		
+		System.out.println("ahahhaha");
 	}
 	
 }
